@@ -3,11 +3,13 @@ package com.springboot.entity.feed;
 
 import com.springboot.entity.user.UserEntity;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Table(name = "feed")
 @DynamicInsert

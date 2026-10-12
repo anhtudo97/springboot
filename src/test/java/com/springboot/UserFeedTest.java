@@ -40,4 +40,12 @@ public class UserFeedTest {
 //        feedRepository.save(feed);
         userRepository.save(user);
     }
+
+    @Test
+    @Transactional
+    void selectOneToManyTest() {
+        UserEntity user = userRepository.findById(1L).orElseThrow();
+        System.out.println(user);
+        System.out.println(user.getFeedList());
+    }
 }
