@@ -15,3 +15,19 @@ spring:
       hibernate:
         format_sql: true
         use_sql_comments: true
+  mail:
+    port: 465
+    host: ${MAIL_HOST:smtp.gmail.com}
+    username: ${MAIL_USERNAME:anhtudo0703@gmail.com}
+    password: "cpfg iwio brtz uqup"
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          # port 465 = implicit SSL, STARTTLS must stay off
+          starttls:
+            enable: false
+            required: false
+          ssl:
+            enable: true
