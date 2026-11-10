@@ -36,3 +36,15 @@ spring:
     consumer:
       group-id: springboot-otp-group-id
       auto-offset-reset: earliest
+
+  logging:
+    level:
+      org.springframework.security: DEBUG
+
+  security:
+    user:
+      password: 123
+      name: 123
+      roles: # multiple roles
+        - admin
+        - user
